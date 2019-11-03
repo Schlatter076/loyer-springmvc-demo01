@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="Kotlin2JsCompilerArguments">
+    <option name="sourceMapEmbedSources" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpellCheckingInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="libraryTable">
+    <library name="ext">
+      <CLASSES>
+        <root url="file://D:/Program Files (x86)/Java/JDK8/jre/lib/ext" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+      <jarDirectory url="file://D:/Program Files (x86)/Java/JDK8/jre/lib/ext" recursive="false" />
+    </library>
+    <library name="lib">
+      <CLASSES>
+        <root url="file://D:/Program Files (x86)/Java/JDK8/jre/lib" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+      <jarDirectory url="file://D:/Program Files (x86)/Java/JDK8/jre/lib" recursive="false" />
+    </library>
+    <library name="lib1">
+      <CLASSES>
+        <root url="file://D:/Program Files (x86)/Java/JDK8/lib" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="file://D:/Program Files (x86)/Java/JDK8/lib" />
+      </SOURCES>
+      <jarDirectory url="file://D:/Program Files (x86)/Java/JDK8/lib" recursive="false" />
+      <jarDirectory url="file://D:/Program Files (x86)/Java/JDK8/lib" recursive="false" type="SOURCES" />
+    </library>
+  </component>
+</project>
