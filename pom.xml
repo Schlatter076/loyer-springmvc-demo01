@@ -25,9 +25,16 @@
     <junit.version>4.12</junit.version>
     <!-- mybatis版本号 -->
     <mybatis.version>3.2.1</mybatis.version>
+    <c3p0.version>0.9.5.4</c3p0.version>
   </properties>
 
   <dependencies>
+    <!-- C3P0依赖 -->
+    <dependency>
+      <groupId>com.mchange</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>${c3p0.version}</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

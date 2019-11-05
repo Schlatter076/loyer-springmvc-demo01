@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.loyer.web.dao.IstudentDao">
+	
+	<select id="selectAllStudents" resultType="Student">
+        SELECT name,age,score FROM student
+    </select>
+	<insert id="insertStudent" parameterType="Student">
+        INSERT INTO student(name,age,score) VALUES(#{name},#{age},#{score})
+    </insert>
+	<update id="updateOne" parameterType="Student">
+        UPDATE student SET name=#{name},age=#{age},score=#{score} WHERE id=#{id}
+    </update>
+
+</mapper>
