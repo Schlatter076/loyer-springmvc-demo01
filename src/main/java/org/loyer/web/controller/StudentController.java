@@ -1,8 +1,8 @@
 package org.loyer.web.controller;
 
 import org.loyer.web.service.IstudentService;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
@@ -15,7 +15,7 @@ public class StudentController implements Controller {
     public ModelAndView handleRequest(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
 
         ModelAndView mv = new ModelAndView();
-        ApplicationContext springContext = new ClassPathXmlApplicationContext("application.xml");
+        WebApplicationContext springContext = WebApplicationContextUtils.getWebApplicationContext(httpServletRequest.getSession().getServletContext());
         IstudentService service = (IstudentService) springContext.getBean("studentServiceImpl");
         mv.addObject("students", service.getAllStudents());
         mv.setViewName("/WEB-INF/jsp/stu.jsp");
