@@ -21,9 +21,10 @@ public class MyTest {
     @Test
     public void test01() {
         IstudentService studentService = (IstudentService) ac.getBean("studentServiceImpl");
+        //studentService.addStudent(new Student("hahaha", 25, 99));
         List<Student> list = studentService.getAllStudents();
         for (Student stu : list) {
-            System.out.println(stu);
+            System.err.println(stu);
         }
     }
 }

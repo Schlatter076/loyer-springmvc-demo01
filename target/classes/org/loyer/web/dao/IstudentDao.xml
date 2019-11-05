@@ -5,7 +5,7 @@
 <mapper namespace="org.loyer.web.dao.IstudentDao">
 	
 	<select id="selectAllStudents" resultType="Student">
-        SELECT name,age,score FROM student
+        SELECT id,name,age,score FROM student
     </select>
 	<insert id="insertStudent" parameterType="Student">
         INSERT INTO student(name,age,score) VALUES(#{name},#{age},#{score})

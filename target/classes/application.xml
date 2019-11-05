@@ -69,7 +69,14 @@
             <value>5</value>
         </property>
     </bean>
-
+    
+    <!-- 自动扫描了所有的mapper接口文件 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName"
+                  value="sqlSessionFactory" />
+        <property name="basePackage" value="org.loyer.web.dao" />
+    </bean>
+    
     <!-- 配置sqlSessionFactory -->
     <bean id="sqlSessionFactory"
           class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -78,12 +85,7 @@
         <property name="configLocation"
                   value="classpath:mybatis-config.xml" />
     </bean>
-    <!-- 自动扫描了所有的mapper接口文件 -->
-    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="sqlSessionFactoryBeanName"
-                  value="sqlSessionFactory" />
-        <property name="basePackage" value="org.loyer.web.dao" />
-    </bean>
+    
 
     <!-- 自动扫描注解的bean -->
     <context:component-scan
