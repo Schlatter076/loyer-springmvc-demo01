@@ -11,6 +11,7 @@
     <title>欢迎页面</title>
 </head>
 <body>
-<%=request.getAttribute("message")%>
+<%=request.getAttribute("message")%><br/>
+<a href="index.jsp">回到首页</a>
 </body>
 </html>

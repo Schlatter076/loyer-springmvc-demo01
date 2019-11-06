@@ -9,9 +9,10 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title>欢迎页面</title>
+    <title>全部学生显示页面</title>
 </head>
 <body>
+<a href="index.jsp">回到首页</a>
 <%
     List<Student> stus = (List<Student>) request.getAttribute("students");
     for (Student stu : stus) {%>

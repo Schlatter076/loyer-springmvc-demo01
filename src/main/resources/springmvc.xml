@@ -3,7 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<bean id="/my.do" class="org.loyer.web.controller.MyController"/>
-	<bean id="/stu.do" class="org.loyer.web.controller.StudentController"/>
+	<bean id="/my.do" class="org.loyer.web.controller.MyController" />
+	<bean id="/stu.do" class="org.loyer.web.controller.StudentController" />
+	<bean id="/addStu.do" class="org.loyer.web.controller.AddStuController" />
+	<bean id="/add.do" class="org.loyer.web.controller.AddController" />
+	<bean id="/updateStu.do" class="org.loyer.web.controller.UpdateStuController" />
+	<bean id="/update.do" class="org.loyer.web.controller.UpdateController" />
 
 </beans>
