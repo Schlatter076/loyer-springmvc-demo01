@@ -18,7 +18,7 @@ public class StudentController implements Controller {
         WebApplicationContext springContext = WebApplicationContextUtils.getWebApplicationContext(httpServletRequest.getSession().getServletContext());
         IstudentService service = (IstudentService) springContext.getBean("studentServiceImpl");
         mv.addObject("students", service.getAllStudents());
-        mv.setViewName("/WEB-INF/jsp/stu.jsp");
+        mv.setViewName("stu");
         return mv;
     }
 }

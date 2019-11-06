@@ -12,7 +12,7 @@ public class UpdateStuController implements Controller {
     public ModelAndView handleRequest(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
 
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("/WEB-INF/jsp/updateStu.jsp");
+        mv.setViewName("updateStu");
         return mv;
     }
 }

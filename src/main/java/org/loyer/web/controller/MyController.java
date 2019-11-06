@@ -11,7 +11,7 @@ public class MyController implements Controller {
     public ModelAndView handleRequest(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
         ModelAndView mv = new ModelAndView();
         mv.addObject("message", "欢迎来到Loyer的Web世界");
-        mv.setViewName("/WEB-INF/jsp/welcome.jsp");
+        mv.setViewName("welcome");
         return mv;
     }
 }
