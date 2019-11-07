@@ -21,7 +21,7 @@ public class AddController implements Controller {
         IstudentService service = (IstudentService) springContext.getBean("studentServiceImpl");
         Student stu = StudentUtils.getStudentFromRequest(httpServletRequest);
         service.addStudent(stu);
-        mv.setViewName("success");
+        mv.setViewName("succ");
         return mv;
     }
 }
