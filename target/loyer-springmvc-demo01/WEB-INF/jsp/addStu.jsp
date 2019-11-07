@@ -11,12 +11,11 @@
     <title>增加一名学生</title>
 </head>
 <body>
-
     <form action="add.do" method="post">
         姓名:<input type="text" name="name" /><br/>
         年龄:<input type="text" name="age" /><br/>
         成绩:<input type="text" name="score" /><br/>
         <input type="submit" name="submit" value="添加" />
     </form>
-dy>
+</body>
 </html>

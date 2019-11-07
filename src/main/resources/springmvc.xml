@@ -18,15 +18,20 @@
 	<!-- 扫描controller（controller层注入） -->
 	<context:component-scan base-package="org.loyer.web.controller"/>
 	
-	<!-- 对模型视图添加前后缀 -->
+	<!-- jsp视图解析器 -->
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-	      p:prefix="/WEB-INF/jsp/" p:suffix=".jsp"/>
+	      p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" />
 	
-	<bean id="/my.do" class="org.loyer.web.controller.MyController" />
-	<bean id="/stu.do" class="org.loyer.web.controller.StudentController" />
-	<bean id="/addStu.do" class="org.loyer.web.controller.AddStuController" />
-	<bean id="/add.do" class="org.loyer.web.controller.AddController" />
-	<bean id="/updateStu.do" class="org.loyer.web.controller.UpdateStuController" />
-	<bean id="/update.do" class="org.loyer.web.controller.UpdateController" />
+	<!--配置注解驱动-->
+	<mvc:annotation-driven/>
+	<!--配置静态资源html的访问-->
+	<mvc:resources mapping="/**/*.html" location="/WEB-INF/html/" />
+	
+	<bean name="/my.do" class="org.loyer.web.controller.MyController"/>
+	<bean name="/stu.do" class="org.loyer.web.controller.StudentController"/>
+	<bean name="/addStu.do" class="org.loyer.web.controller.AddStuController"/>
+	<bean name="/add.do" class="org.loyer.web.controller.AddController"/>
+	<bean name="/updateStu.do" class="org.loyer.web.controller.UpdateStuController"/>
+	<bean name="/update.do" class="org.loyer.web.controller.UpdateController"/>
 
 </beans>
