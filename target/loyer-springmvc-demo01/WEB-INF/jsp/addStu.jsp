@@ -5,7 +5,7 @@
   Time: 8:40
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java"  pageEncoding="UTF-8" %>
 <html>
 <head>
     <title>增加一名学生</title>
@@ -18,6 +18,5 @@
         成绩:<input type="text" name="score" /><br/>
         <input type="submit" name="submit" value="添加" />
     </form>
-
-</body>
+dy>
 </html>
